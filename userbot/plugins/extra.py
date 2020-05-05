@@ -34,7 +34,7 @@ async def fun(e):
 async def Oof(e):
     t = "Oof"
     for j in range(15):
-        t = t[:-1] + "of"
+        t = t[:-1] + "oo"
         await e.edit(t)
 
 @borg.on(admin_cmd("ccry$"))
