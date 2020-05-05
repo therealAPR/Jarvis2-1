@@ -1,4 +1,4 @@
-# if you change credits, you get anal cancer and get murdered by russians in 3 days.
+## if you change credits, you get anal cancer and get murdered by russians in 3 days.
 """
 Support chatbox for pmpermit.
 Used by incoming messages with trigger as /start
@@ -15,7 +15,7 @@ from userbot import ALIVE_NAME
 from userbot.utils import admin_cmd
 
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "No name set yet nibba, join our channel @giveawaygods2"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in heroku vars"
 PREV_REPLY_MESSAGE = {}
 
 
@@ -109,4 +109,3 @@ async def _(event):
                      await borg.send_message(chat, TWO)
                      await asyncio.sleep(3)
                      await event.client(functions.contacts.BlockRequest(chat_id))
-
