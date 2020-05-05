@@ -1,6 +1,6 @@
 """ Powered by @Google
 Available Commands:
-.google <query>
+.go <query> credits to owner of bot
 .google image <query>
 .google reverse search"""
 
