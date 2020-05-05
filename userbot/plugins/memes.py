@@ -462,6 +462,20 @@ CHU_STRINGS = [
      "`Dil ke armaa ansuon me beh jaye tum bskd ke chutiye hi reh gye.`",
      "`Ishq Se Tabiyat Ne Zeest Ka Mazaa aya maine is lodu ko randi khane me paya.`",
      "`Mirza galib ki yeh khani hai tu bhosdika hai yeh sab ki jubani hai.`",
+     "`Ek dora hai ek nora hai charo taraf kohra hi kohra hai ye sabse bada behan ka lawda hai.`",
+     "`Phool murjhate achhe nahi lagte aap land khujate acche nahi lagte yehi umar hai chodne ki yaaro aap bathroom mein hilaate acche nahi lagte.`",
+     "`Badi hasrat thi ki khole iski maa ki salwaar ka  nara par iski maa ki berukhi dekho ki aagayi nangi dobara.`",
+     "`Na jaane konsi shilajit hai iski maa ki yadon mein jab bhi sochta hun jhanajhana jaata hun.`",
+     "`Yaara Teri Yaari Pe Mujhe Shak Nahi Tha; Lekin Sabne Teri Gaand Maari, Kya Mera Koi Haq Nahi Tha.`",
+     "`Yehi to kamal hai hamara baap bante ho tum aur naam aata hai humara.`",
+     "`Chinti chadi pahad pe angrejon ka jamana tha lund ki pistol thi chut pe nishana tha.`",
+     "`Bhola khada bich bazaar fut fut kr roye  gaand  Maar Sab Chal Diyo Paisa Diyo N Koye.`",
+     "`Pani kam hain  matke mein gand mardunga jhatke mein.`",
+     "`Duniya haseeno ka mela fir bhi mera chutiya dost akela.`",
+     "`8 ko kehte hain hindi mein aath ja bsdk tu ja ke kutiya ki chaat.`",
+     "`Purani baatein bhool ja mera lund pakad ke jhool ja.`",
+     "`Permanent hai pakka tera baap chaka.`",
+     "`Yaar azab tera nakhra ghazab tera style hai gand dhone ki tameez nahi haath mein mobile hain.`",
 ]
 FUK_STRINGS = [
    "`It's better to let someone think you are an Idiot than to open your mouth and prove it.`",
@@ -507,28 +521,6 @@ ABUSEHARD_STRING = [
         "`Gand mare gandu Chut mare Chutiya Sabse accha mutti 2 mint me chutti😛`",
         "`Marzi Ka Sex Pap Nahi Hota.. Piche Se Dalne Wala Kabhi Baap Nahi Hota.. Condom Zarur Lagana Mere Dost Qki.. Sex K Waqt Popat Ke Pass Dimag Nahi Hota.`",
         "`Uss Ne Hothon Se Chhu Kar Lowd* Pe Nasha Kar Diya; Lu*D Ki Baat To Aur Thi, Uss Ne To Jhato* Ko Bhi Khada Kar Diya!`",
-]
-HELLOSTR = [
-    "`Hi !`",
-    "`‘Ello, gov'nor!`",
-    "`What’s crackin’?`",
-    "`‘Sup, homeslice?`",
-    "`Howdy, howdy ,howdy!`",
-    "`Hello, who's there, I'm talking.`",
-    "`You know who this is.`",
-    "`Yo!`",
-    "`Whaddup.`",
-    "`Greetings and salutations!`",
-    "`Hello, sunshine!`",
-    "`Hey, howdy, hi!`",
-    "`What’s kickin’, little chicken?`",
-    "`Peek-a-boo!`",
-    "`Howdy-doody!`",
-    "`Hey there, freshman!`",
-    "`I come in peace!`",
-    "`Ahoy, matey!`",
-    "`Hiya!`",
-    "`Oh retarded gey! Well Hello`",
 ]
 
 SHGS = [
@@ -857,7 +849,7 @@ async def vapor(vpr):
 @register(outgoing=True, pattern="^.repo$")
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("Click [here](https://github.com/prajaydevsys/Jarvis2) to open this cool userbot repo.")
+        await e.edit("Click [here](https://github.com/indianbhaiya/IndianBot) to open this cool userbot repo.")
 			  
 			  
 @register(outgoing=True, pattern="^.str(?: |$)(.*)")
@@ -922,13 +914,6 @@ async def zal(zgfy):
             reply_text.append(charac)
 
         await zgfy.edit("".join(reply_text))
-
-
-@register(outgoing=True, pattern="^.hi$")
-async def hoi(hello):
-    """ Greet everyone! """
-    if not hello.text[0].isalpha() and hello.text[0] not in ("/", "#", "@", "!"):
-        await hello.edit(random.choice(HELLOSTR))
 			  
 @register(outgoing=True, pattern="^.pkill$")
 async def killing (killed):
@@ -970,7 +955,7 @@ async def proo (pros):
 async def chutiya (fuks):
     """ String for fhu only -_-"""
     if not fuks.text[0].isalpha() and fuks.text[0] not in ("/", "#", "@", "!"):
-        index = random.randint(0, len(CHU_STRINGS) - 1)
+        index = random.randint(0, len(FUK_STRINGS) - 1)
         reply_text = FUK_STRINGS[index]
         await fuks.edit(reply_text)
 
@@ -1260,4 +1245,5 @@ CMD_HELP.update({
 \n\n.abuse\
 \nUsage: Protects you from unwanted peeps.\
 \n\n\nThanks to 🅱️ottom🅱️ext🅱️ot (@NotAMemeBot) for some of these."
+})anks to 🅱️ottom🅱️ext🅱️ot (@NotAMemeBot) for some of these."
 })
