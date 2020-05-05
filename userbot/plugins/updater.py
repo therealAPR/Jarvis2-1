@@ -8,7 +8,6 @@ import sys
 import asyncio
 from userbot.utils import admin_cmd
 
-
 # -- Constants -- #
 IS_SELECTED_DIFFERENT_BRANCH = (
     "looks like a custom branch {branch_name} "
@@ -16,7 +15,7 @@ IS_SELECTED_DIFFERENT_BRANCH = (
     "in this case, Updater is unable to identify the branch to be updated."
     "please check out to an official branch, and re-start the updater."
 )
-OFFICIAL_UPSTREAM_REPO = "https://github.com/Indianbhaiya/IndianBot/"
+OFFICIAL_UPSTREAM_REPO = "https://github.com/prajaydevsys/Jarvis2"
 BOT_IS_UP_TO_DATE = "the userbot is up-to-date."
 NEW_BOT_UP_DATE_FOUND = (
     "new update found for {branch_name}\n"
@@ -141,7 +140,7 @@ def generate_change_log(git_repo, diff_marker):
 
 async def deploy_start(bot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
-    await message.edit("restarted! do `.alive` to check if I am online?\n It will takes approximately 5 mins to update your userbot")
+    await message.edit("restarted! do `.alive` to check if I am online?\nIt will takes approximately 5 mins to update your userbot")
     await remote.push(refspec=refspec)
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
