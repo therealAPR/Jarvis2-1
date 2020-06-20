@@ -30,10 +30,13 @@ async def set_not_afk(event):
             await borg.send_message(  # pylint:disable=E0602
                 event.chat_id,
                 "Please set `PLUGIN_CHANNEL` " + \
+
                 "for the proper functioning of afk functionality " + \
-                "in @giveawaygods2
-                \n\n `{}`".format(str(e)),
+
+                "in @therealApr\n\n `{}`".format(str(e)),
+
                 reply_to=event.message.id,
+
                 silent=True
             )
         USER_AFK = {}  # pylint:disable=E0602
