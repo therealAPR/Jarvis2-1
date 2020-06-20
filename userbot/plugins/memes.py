@@ -1245,5 +1245,5 @@ CMD_HELP.update({
 \n\n.abuse\
 \nUsage: Protects you from unwanted peeps.\
 \n\n\nThanks to 🅱️ottom🅱️ext🅱️ot (@NotAMemeBot) for some of these."
-})anks to 🅱️ottom🅱️ext🅱️ot (@NotAMemeBot) for some of these."
-})
+
+
